@@ -1,35 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productivity App</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              'brand-primary': '#1E40AF', // A deep blue for focus
-              'brand-secondary': '#DBEAFE', // A light blue for backgrounds/highlights
-              'brand-text': '#111827', // Dark gray for primary text
-              'brand-text-secondary': '#6B7280', // Lighter gray for secondary text
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productivity App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-primary': '#1E40AF', // A deep blue for focus
+            'brand-secondary': '#DBEAFE', // A light blue for backgrounds/highlights
+            'brand-text': '#111827', // Dark gray for primary text
+            'brand-text-secondary': '#6B7280', // Lighter gray for secondary text
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-in-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0, transform: 'translateY(10px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' },
             },
-            animation: {
-              'fade-in': 'fadeIn 0.5s ease-in-out',
-            },
-            keyframes: {
-              fadeIn: {
-                '0%': { opacity: 0, transform: 'translateY(10px)' },
-                '100%': { opacity: 1, transform: 'translateY(0)' },
-              },
-            },
-          }
+          },
         }
       }
-    </script>
-<script type="importmap">
+    }
+  </script>
+  <script type="importmap">
 {
   "imports": {
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
@@ -39,7 +39,10 @@
 }
 </script>
 </head>
+
 <body class="bg-gray-50 antialiased font-sans">
-    <div id="root"></div>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>
